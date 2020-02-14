@@ -15,14 +15,11 @@ public class Assignment1SalaryCalculator {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        //DUE FRIDAY? MAYBE MONDAY? WEDNESDAY PERHAPS?
-        //52 weeks of work per year
-        //40 hours per week
-        //calcSalary(int hourlyRate)                        return int
-        //calcHourly(int salary)                            return int
-        //calcTakeHomePerMonth(int salary, double taxRate)  return double
-        //calcTaxes(int salary, double taxes)               return double
-        // TODO code application logic here
+        SalaryCalculator salaryCalculator = new SalaryCalculator();
+        salaryCalculator.calcSalary(20);
+        salaryCalculator.calcHourly(41600);
+        salaryCalculator.calcTakeHomePerMonth(41600, .125);
+        salaryCalculator.calcTaxes(41600, .125);
     }
     
 }
